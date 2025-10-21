@@ -1,6 +1,9 @@
 # Imagen base oficial de PHP con Apache
 FROM php:8.2-apache
 
+# Establecer el directorio de trabajo
+WORKDIR /var/www/html
+
 # Copiar todo el contenido del proyecto al contenedor
 COPY . /var/www/html/
 
